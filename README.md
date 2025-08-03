@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-🎥 YouTube Clone
+🎥 YouTube Clone <br>
 This is a responsive YouTube Clone built using React.js and modern front-end tools. It replicates the core functionality of YouTube's UI including video listing, playing, and categories — giving users a sleek and familiar video streaming experience.
 
 🚀 Features
