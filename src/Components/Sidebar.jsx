@@ -28,149 +28,239 @@ function Sidebar({ sidebar, category, setCategory }) {
         sidebar ? "w-[15%]" : "w-[5%]"
       } max-[900px]:hidden`}
     >
-      <div className="">
+      <div>
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 0 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 0 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(0)}
         >
           <img
             src={home}
             className={`w-[20px] mr-[20px] ${
-              category === 0 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 0 ? "bg-gray-200" : ""
+            }
+              ${category === 0 ? "border-b-2 border-red-500 pb-[2px] " : ""} 
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Home</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Home
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 20 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 20 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(20)}
         >
           <img
             src={game_icon}
             className={`w-[20px] mr-[20px] ${
-              category === 20 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 20 ? "bg-gray-200" : ""
+            }
+              ${category === 20 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Gaming</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Gaming
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 2 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 2 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(2)}
         >
           <img
             src={automobiles}
             className={`w-[20px] mr-[20px] ${
-              category === 2 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 2 ? "bg-gray-200" : ""
+            }
+              ${category === 2 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Automobiles</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Automobiles
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 17 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 17 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(17)}
         >
           <img
             src={sports}
             className={`w-[20px] mr-[20px] ${
-              category === 17 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 17 ? "bg-gray-200" : ""
+            }
+              ${category === 17 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Sports</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Sports
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 24 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 24 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(24)}
         >
           <img
             src={entertain}
             className={`w-[20px] mr-[20px] ${
-              category === 24 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 24 ? "bg-gray-200" : ""
+            }
+              ${category === 24 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Entertainment</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Entertainment
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 28 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 28 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(28)}
         >
           <img
             src={tech}
             className={`w-[20px] mr-[20px] ${
-              category === 28 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 28 ? "bg-gray-200" : ""
+            }
+              ${category === 28 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Technology</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Technology
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 10 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 10 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(10)}
         >
           <img
             src={music}
             className={`w-[20px] mr-[20px] ${
-              category === 10 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 10 ? "bg-gray-200" : ""
+            }
+              ${category === 10 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Music</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Music
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 22 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 22 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(22)}
         >
           <img
             src={blogs}
             className={`w-[20px] mr-[20px] ${
-              category === 22 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 22 ? "bg-gray-200" : ""
+            }
+              ${category === 22 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">Blogs</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            Blogs
+          </p>
         </div>
 
         <div
-          className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
-            category === 25 ? "active" : ""
+          className={`group relative flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${
+            sidebar && category === 25 ? "bg-gray-200 font-semibold w-full" : ""
           }`}
           onClick={() => setCategory(25)}
         >
           <img
             src={news}
             className={`w-[20px] mr-[20px] ${
-              category === 25 ? "border-b-2 border-red-500 pb-[2px]" : ""
+              !sidebar && category === 25 ? "bg-gray-200" : ""
+            }
+              ${category === 25 ? "border-b-2 border-red-500 pb-[2px]" : ""}
             }`}
             alt=""
           />
-          {sidebar && <p className="inline">News</p>}
+          <p
+            className={`whitespace-nowrap ${
+              sidebar
+                ? "inline"
+                : "absolute left-5 text-[12px] px-1 py-1 hidden group-hover:block bg-white "
+            }`}
+          >
+            News
+          </p>
         </div>
 
         <hr className="border-0 h-[1px] bg-[#ccc] w-[85%] mb-2" />

@@ -8,10 +8,15 @@ function Feed({ category }) {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const videoList_URl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`;
-    await fetch(videoList_URl)
-      .then((response) => response.json())
-      .then((data) => setData(data.items));
+    try {
+      const videoList_URL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`;
+
+      const response = await fetch(videoList_URL);
+      const data = await response.json();
+      setData(data.items);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   useEffect(() => {

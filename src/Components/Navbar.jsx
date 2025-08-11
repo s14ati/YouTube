@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState } from "react";
 import menu_icon from "../assets/menu.png";
 import logo from "../assets/youtube-icon.png";
 import search_icon from "../assets/search.png";
@@ -7,8 +7,14 @@ import more_icon from "../assets/more.png";
 import notify_icon from "../assets/notification.png";
 import profile_icon from "../assets/megan.png";
 import { Link } from "react-router-dom";
+// import dark_icon from "../assets/dark-icon.png"
 
 function Navbar({ setSideBar, sidebar }) {
+  // const [darkTheme,setDarkTheme] = useState(false);
+  // function darky(){
+  //   setDarkTheme(!darkTheme);
+  // }
+
   const images = [
     { image: upload_icon },
     { image: more_icon },
@@ -58,6 +64,7 @@ function Navbar({ setSideBar, sidebar }) {
             alt=""
           />
         ))}
+        {/* <img src={dark_icon} className="w-[35px] h-12 object-cover cursor-pointer" onClick={darky} alt="" /> */}
         <img
           src={profile_icon}
           className="user-icon cursor-pointer w-[35px] rounded-full max-[900px]:block max-[900px]:w-[30px]"
