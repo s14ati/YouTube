@@ -8,7 +8,7 @@ function Video() {
 
   return (
     <div
-      className="bg-[f9f9f9] pl-[2%]  pr[2%] pt-[20px] pb-[20px] flex justify-between flex-wrap max-[900px]:pl-[5%] max-[900px]:pr-[5%] "
+      className="bg-[f9f9f9] pl-[2%] pr[2%] pt-[20px] pb-[20px] flex justify-between flex-wrap max-[900px]:pl-[5%] max-[900px]:pr-[5%] "
     >
       <PlayVideo videoId={videoId} />
       <Recommended categoryId={categoryId} />
