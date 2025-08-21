@@ -28,3 +28,5 @@ Routing: React Router <br>
 Authentication: Firebase <br>
 YouTube Data API v3 <br>
 Vite (for development build) <br>
+
+## 🌐 [Live Demo](https://you-tube-blush.vercel.app)  
