@@ -16,15 +16,15 @@ If you are developing a production application, we recommend using TypeScript wi
 A YouTube-inspired video streaming application with user authentication, video browsing, and responsive UI. Built with React and Firebase, and deployed on Netlify.
 
 # 📌 Features
-▶️ User Authentication – Sign Up & Sign In using Firebase Authentication.
-📺 Video Browsing – Explore videos with a familiar YouTube-like interface.
-🔀 Routing – Seamless navigation between Home, Video Player, and User Profile using React Router.
-📱 Responsive Design – Optimized for mobile, tablet, and desktop screens.
-⭐ Interactive UI – Clean layout with a focus on user experience.
+▶️ User Authentication – Sign Up & Sign In using Firebase Authentication. <br>
+📺 Video Browsing – Explore videos with a familiar YouTube-like interface. <br>
+🔀 Routing – Seamless navigation between Home, Video Player, and User Profile using React Router. <br>
+📱 Responsive Design – Optimized for mobile, tablet, and desktop screens. <br>
+⭐ Interactive UI – Clean layout with a focus on user experience. <br>
 
 # 🛠️ Tech Stack
-Frontend: React.js, Tailwind CSS
-Routing: React Router
-Authentication: Firebase
-YouTube Data API v3
-Vite (for development build)
+Frontend: React.js, Tailwind CSS <br>
+Routing: React Router <br>
+Authentication: Firebase <br>
+YouTube Data API v3 <br>
+Vite (for development build) <br>
