@@ -12,31 +12,19 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-🎥 YouTube Clone <br>
-This is a responsive YouTube Clone built using React.js and modern front-end tools. It replicates the core functionality of YouTube's UI including video listing, playing, and categories — giving users a sleek and familiar video streaming experience.
+# 🎬 YouTube Clone
+A YouTube-inspired video streaming application with user authentication, video browsing, and responsive UI. Built with React and Firebase, and deployed on Netlify.
 
-🚀 Features
+# 📌 Features
+▶️ User Authentication – Sign Up & Sign In using Firebase Authentication.
+📺 Video Browsing – Explore videos with a familiar YouTube-like interface.
+🔀 Routing – Seamless navigation between Home, Video Player, and User Profile using React Router.
+📱 Responsive Design – Optimized for mobile, tablet, and desktop screens.
+⭐ Interactive UI – Clean layout with a focus on user experience.
 
-📺 Home Page with Trending Videos
-
-🎞️ Video Playback Page
-
-📂 Video Categories Sidebar
-
-📱 Responsive Design
-
-🕒 Timestamps and View Counts using Moment.js
-
-🛠️ Tech Stack
-
-React.js
-
-React Router
-
-Tailwind CSS
-
-Moment.js
-
+# 🛠️ Tech Stack
+Frontend: React.js, Tailwind CSS
+Routing: React Router
+Authentication: Firebase
 YouTube Data API v3
-
 Vite (for development build)
